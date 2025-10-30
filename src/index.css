@@ -1,0 +1,16 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Clash Grotesk', Arial, sans-serif;
+  background-color: #0F172A;
+  color: #E2E8F0;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}

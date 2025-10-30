@@ -1,12 +1,25 @@
 import './Navbar.css'
 
 function Navbar() {
+
+    const abrirMenuMobil = () => {
+        console.log("Paco es gay");
+        var id = "mobile";
+        document.getElementById(id).style.display = "flex";
+    }
+
+    const cerrarMenuMobil = () => {
+        console.log("Paco no es gay");
+        var id = "mobile";
+        document.getElementById(id).style.display = "none";
+    }
+
   
  return (
     <>
       <div className="navbar-mobile" id="mobile">
                                 <div className="nav-cross-mobile">
-                                    <i  className="fa-solid fa-xmark fa-2xl" style={{color: '#ffffff'}}></i>
+                                    <i onClick={cerrarMenuMobil} className="fa-solid fa-xmark fa-2xl" style={{color: '#ffffff'}}></i>
                                 </div>
                                 <div className="nav-mobile-links">
                                     <ul>
@@ -41,7 +54,7 @@ function Navbar() {
                             </div>
 
                             <div className="nav-hamburger" id="hamburger">
-                                <i  className="fa-solid fa-bars fa-2xl" style={{color: '#ffffff'}}></i>
+                                <i  onClick={abrirMenuMobil} className="fa-solid fa-bars fa-2xl" style={{color: '#ffffff'}}></i>
                             </div>    
                 </div>              
         </div> 

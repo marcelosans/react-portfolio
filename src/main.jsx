@@ -8,6 +8,7 @@ import Projects from './projects/Projects.jsx'
 import Skills from './skills/Skills.jsx'
 import Education from './education/Education.jsx'
 import WorkExperience from './work-experience/WorkExperience.jsx'
+import Footer from './Footer/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <Skills/>
     <Education/>
     <WorkExperience/>
+    <Footer/>
 
   </StrictMode>,
 )

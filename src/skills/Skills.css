@@ -1,0 +1,137 @@
+.skills-technology
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1E293B;
+  padding: 100px 20px;
+}
+
+.skills-content
+{
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skills-content h2
+{
+  font-size: 4em;
+  color: #38BDF8;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 60px;
+}
+
+.skill-section 
+{
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.skill-icons
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.5em;
+  gap: 20px;
+}
+
+.skill-icon
+{
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.skill-icon:hover::before {
+  opacity: 1;
+}
+
+.skill-icon:hover
+{
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+  border-color: #3B82F6;
+}
+
+.skill-icon 
+{
+   width: 12.5%;
+   min-width: 100px;
+}
+
+.skill-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.skill-section .title-section h3
+{
+  font-size: 2em;
+  color: #E2E8F0;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.skill-section .title-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3B82F6 0%, #38BDF8 100%);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .skill-icon {
+    width: 30%;
+    min-width: 80px;
+  }
+
+  .skills-content h2 {
+    font-size: 2.5em;
+  }
+
+  .skill-section .title-section h3 {
+    font-size: 1.5em;
+  }
+  
+  .skills-technology {
+    padding: 60px 20px;
+  }
+}

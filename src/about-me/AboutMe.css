@@ -1,0 +1,81 @@
+.about-me {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #0F172A;
+  color: #E2E8F0;
+}
+
+.about-me h1 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #38BDF8;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+/* Contenedor intermedio (texto + imagen) */
+.mid-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+/* Texto */
+.about-me-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: #1E293B;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+  color: #CBD5E1;
+  font-weight: 200;
+  text-align: left;
+}
+
+.about-me-content p {
+  color: #CBD5E1;
+}
+
+/* Imagen */
+.image-about-me img {
+  width: 50%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #334155;
+}
+
+.image-about-me img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.5);
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .mid-about {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-me-content {
+    max-width: 90%;
+    text-align: left;
+  }
+  
+  .about-me {
+    padding: 50px 20px;
+  }
+}
